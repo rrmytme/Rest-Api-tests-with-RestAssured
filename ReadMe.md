@@ -85,5 +85,3 @@ TestNG allows exchanging TestNG attributes (variables) between classes. In this 
 TestNG attributes are enabled by adding `ITestContext context` to the test methods that use them. You can set TestNG attributes with `setAttribute()`, and you can get TestNG attributes with `getAttribute()`. If you use `getSuite()` as part of your TestNG attribute set or get command, then the scope of your TestNG attribute is for the entire TestNG "Suite" and your attribute will be accessible in all "Test" that are part of the "Suite"(as defined in the `testng.xml` file). If you leave out the `getSuite()` part, then the TestNG attribute only applies to the scope of its "Test" (as defined in the `testng.xml` file). This means that with `getSuite()`, you set and get a kind of "global variable" for the entire "Suite", while without it, you set and get a kind of "local variable" for the "Test" only.
 
 You can execute the TestNG "Suite" in your IDE by using the context menu of the `testng.xml` file.
-
-References: https://github.com/BrunoBosshard/restassured-examples
